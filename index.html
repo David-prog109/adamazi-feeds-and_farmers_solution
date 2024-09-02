@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adamazi Feeds And Farmers Solution</title>
+    <link rel="stylesheet" href="app.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #37c00d;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="images/farm.jpg"</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services/Products</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <div id="home" class="container section">
+        <h2>Welcome to Adamazi Feeds And Farmers Solution</h2>
+        <p>Your trusted partner for high-quality feed products and frozen meats.</p>
+        <img src="images/adamazi.jpg" alt="Home Image">
+    </div>
+
+    <div id="about" class="container section">
+        <h2>About Us</h2>
+        <p>Adamazi Feeds And Farmers Solution is the fastest way to get good and quality feed products. We specialize in selling frozen meat like chicken, fish, etc.</p>
+        <p>We offer feeds of different types, including:</p>
+        <ul>
+            <li>Feeds of different brands consisting of finisher, mashy, grower,starter, etc.</li>
+        </ul>
+        <img src="images/ultima.jpg" alt="Ultima Super Starter">
+    </div>
+
+    <div id="services" class="container section">
+        <h2>Services/Products</h2>
+        <p>We provide the following services:</p>
+        <ul>
+            <li>Distribution of feeds</li>
+            <li>Wholesale services</li>
+            <li>Retail services</li>
+            <li>Frozen foods</li>
+            <li>Eggs</li>   
+            <li>Vertinary drug services</li>
+        </ul>
+    </div>
+    <div id="services" class="container section">
+        <h2>Our Services</h2>
+        <div class="card">
+            <img src="images/retail.jpg" alt="Service 3">
+            <div class="card-content">
+                <h3 class="card-title">Retail Services</h3>
+                <p class="card-description">Retail options for individual customers and small orders.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/feed.webp" alt="Service 1">
+            <div class="card-content">
+                <h3 class="card-title">Distribution of Feeds</h3>
+                <p class="card-description">Efficient and reliable distribution services to meet all your feed requirements.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/new hope.webp" alt="Service 2">
+            <div class="card-content">
+                <h3 class="card-title">Wholesale Services</h3>
+                <p class="card-description">Competitive wholesale pricing for bulk feed purchases.</p>
+            </div>
+        </div>
+        
+    </div>
+<!-- Contact Form -->
+<div id="contact" class="container section">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+        <h2>Get in Touch</h2>
+        <form id="contactForm" action="submit_form.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="formFeedback"></div>
+        <div id="loadingIndicator" style="display: none;">Submitting...</div> <!-- Loading indicator -->
+    </div>
+</div>
+
+<!-- Link to JavaScript  file -->
+<script src="scripts.js"></script>   
+    <div id="contact" class="container section">
+        <h2>Contact Us</h2>
+        <p>Phone: <a href="tel:08160229042">08160229042</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Adamazi Feeds And Farmers Solution. All rights reserved.</p>
+    </footer>      
+</body>
+</html>
